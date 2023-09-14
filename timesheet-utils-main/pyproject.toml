@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "timesheet-utils"
+version = "0.1.0"
+description = "Timesheet related utilities"
+authors = ["Prasad Chodavarapu <chap@aganitha.ai>"]
+readme = "README.md"
+packages = [{include = "timesheet_utils"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.9.0"
+
+[tool.poetry.scripts]
+ts-lint="timesheet_utils.ts-lint:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
